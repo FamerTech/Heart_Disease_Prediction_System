@@ -8,7 +8,7 @@ st.set_page_config(page_title="Heart Disease Prediction", page_icon=":heart:", l
 
 
 # Load the trained model
-loaded_model = pickle.load(open('saved_model/heart_disease_model.sav', 'rb'))
+loaded_model = pickle.load(open('heart_disease_model.sav', 'rb'))
 
 def predict_heart_disease(input_data):
    input_data_as_numpy_array = np.asarray(input_data, dtype=np.float64)
